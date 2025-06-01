@@ -1,93 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      .choice {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-      }
-      input {
-        width: 100px;
-      }
-      button {
-        width: 100px;
-      }
-      .humanpcChoice {
-        display: flex;
-        gap: 100px;
-      }
-      .hchoice {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-      .pchoice {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-      .humanpcscore {
-        display: flex;
-        gap: 100px;
-        margin: 20px;
-      }
-      .hscore {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-      .pscore {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>"Rock-Paper-Scissor"</h1>
-    <div class="choice">
-      <label for="item"
-        >Enter 0 for "Rock",1 for "Paper" and 2 for "Scissors":</label
-      >
-      <input type="text" name="item" id="item" />
-      <button class="Start">Start</button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .choice {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    input {
+      width: 100px;
+    }
+
+    button {
+      width: 100px;
+    }
+
+    .humanpcChoice {
+      display: flex;
+      gap: 100px;
+    }
+
+    .hchoice {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .pchoice {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .humanpcscore {
+      display: flex;
+      gap: 100px;
+      margin: 20px;
+    }
+
+    .hscore {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .pscore {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>"Rock-Paper-Scissor"</h1>
+  <div class="choice">
+    <label for="item">Enter 0 for "Rock",1 for "Paper" and 2 for "Scissors":</label>
+    <input type="text" name="item" id="item" />
+    <button class="Start">Start</button>
+  </div>
+  <div class="humanpcChoice">
+    <div class="hchoice">
+      <h3>HumanChoice:</h3>
+      <span class="hResult"></span>
     </div>
-    <div class="humanpcChoice">
-      <div class="hchoice">
-        <h3>HumanChoice:</h3>
-        <span class="hResult"></span>
-      </div>
-      <div class="pchoice">
-        <h3>PcChoice:</h3>
-        <span class="pResult"></span>
-      </div>
+    <div class="pchoice">
+      <h3>PcChoice:</h3>
+      <span class="pResult"></span>
     </div>
-    <div>
-      <div class="won">
-        <h3>winner:</h3>
-        <span>wqdqwdqw</span>
-      </div>
+  </div>
+  <div>
+    <div class="won">
+      <h3>winner:</h3>
+      <span class="winner">wqdqwdqw</span>
     </div>
-    <div class="humanpcscore">
-      <div class="hscore">
-        <h3>HumanScore:</h3>
-        <span>wqdqwdqw</span>
-      </div>
-      <div class="pscore">
-        <h3>PcScore:</h3>
-        <span>wqdqwdqw</span>
-      </div>
+  </div>
+  <div class="humanpcscore">
+    <div class="hscore">
+      <h3>HumanScore:</h3>
+      <span class="hscoreresult">wqdqwdqw</span>
     </div>
-    <script src="script.js" defer></script>
-  </body>
+    <div class="pscore">
+      <h3>PcScore:</h3>
+      <span class="pscoreresult">wqdqwdqw</span>
+    </div>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+
 </html>
