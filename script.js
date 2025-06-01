@@ -38,8 +38,6 @@ function getComputerChoice() {
   return Math.floor(Math.random() * 3);
 }
 
-pResult.textContent = getComputerChoice();
-
 function playround(human, computer) {
   if (UserChoices[human] === ComputerChoices[computer]) {
     console.log("Tie,Same picks,Try Again!");
